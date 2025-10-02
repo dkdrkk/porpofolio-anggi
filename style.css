@@ -152,9 +152,53 @@ h2::after {
     transform: scale(1.05);
 }
 
+/* Gaya untuk Bagian Sertifikat */
+#sertifikat {
+    background-color: #f8f0fb;
+}
+.sertifikat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 40px auto 0;
+}
+.sertifikat-item {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.sertifikat-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+.sertifikat-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #f0f0f0;
+}
+.sertifikat-item h4 {
+    color: #8c6bb8;
+    margin: auto 0 5px 0;
+    font-size: 1.1rem;
+}
+.sertifikat-item p {
+    color: #6a6a8a;
+    margin: 0;
+    font-size: 0.85rem;
+}
+
 /* Projects Section */
 #projects {
-    background-color: #f8f0fb;
+    background-color: #fdfcff;
 }
 .project-container {
     display: flex;
@@ -264,6 +308,31 @@ h2::after {
 .gallery-caption p {
     margin: 0;
     font-size: 0.9rem;
+}
+
+/* Gaya untuk Bagian Organisasi Aktif */
+#organisasi-aktif {
+    background-color: #f8f0fb;
+}
+.organisasi-aktif-list {
+    max-width: 800px;
+    margin: 40px auto 0;
+}
+.organisasi-aktif-item {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: left;
+    margin-bottom: 20px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+}
+.organisasi-aktif-item h4 {
+    color: #8c6bb8;
+    margin: 0 0 10px 0;
+    font-size: 1.3rem;
+}
+.organisasi-aktif-item p {
+    margin: 0;
 }
 
 /* Gaya untuk Formulir Kontak */
